@@ -1,0 +1,139 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:10;
+    padding:10;
+}
+h1{
+    font-style: bold;
+    font-size: 40px;
+    text-shadow: 1px 2px 2px rgb(139, 39, 39);
+}
+h2{
+    font-style: italic;
+    text-shadow: 2px 1px 2px rgb(139, 39, 39);
+}
+
+.text{
+    color: rgb(219, 6, 6);
+
+}
+.text h2{
+    font-size: 50px;
+
+}
+.text p{
+    font-size: 10px;
+}
+footer .footer{
+    font-style: bold;
+    font-size: 30px;
+    text-shadow: 1px 2px 2px rgb(97, 36, 36);
+}
+#box1{
+    width:300px;
+    height:120px;
+    background-color: aliceblue;
+    box-shadow: 3px 3px 3px;
+    float: center;
+}
+a{
+    align-items: end;
+}
+ a {
+    font-style: bold;
+    color: red;
+
+}
+a:visited {
+    font-style: bold;
+    color: green;
+
+}
+a{
+    text-decoration: underline;
+
+}
+a:hover{
+    color: blue;
+}
+.bold{
+    margin: 0;
+    box-sizing: border-box;
+    justify-content: end;
+}
+.slider{
+    position: relative;
+    width:50%;
+    height:50%
+    margin: auto;
+}
+.slider img{
+    width:50%;
+    height:50%;
+    display:none;
+    margin:25%;
+}
+img.displaySlide{
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.slider button{
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    font-size:2rem;
+    padding:10px 15px;
+    margin:10px 15px;
+    background-color: red;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+.previous{
+    left:0;
+}
+.next{
+    right:0;
+}
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
+.layout-container {
+    display: flex;
+    min-height: 20vh;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.sidebar-nav {
+    width: 700px;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+.sidebar-nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding: 0 20px;
+    margin: 0;
+}
+.sidebar-nav li{
+    margin-left: 10px;
+}
+.sidebar-nav a{
+    display:block;
+    color: black;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+.sidebar-nav a:hover, .sidebar-nav a.active{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+main {
+    flex-grow: 1;
+    padding: 40px;
+    background-color: #f9f9f9;
+}
